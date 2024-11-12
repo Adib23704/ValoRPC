@@ -1,0 +1,39 @@
+{
+  "name": "valorpc",
+  "version": "1.0.0",
+  "description": "Displays your current Valorant game status in Discord Rich Presence",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "dev": "nodemon --exec electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adib23704/ValoRPC.git"
+  },
+  "author": "Adib23704",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Adib23704/ValoRPC/issues"
+  },
+  "homepage": "https://github.com/Adib23704/ValoRPC#readme",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "^9.14.0",
+    "nodemon": "^3.1.7"
+  },
+  "nodemonConfig": {
+    "events": {
+      "start": "cls || clear"
+    }
+  },
+  "dependencies": {
+    "valclient.js": "^1.2.0"
+  }
+}
